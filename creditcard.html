@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h3>Credit Card Validation</h3>
+<p>Try to submit the form.</p>
+
+<div class="container">
+  <form>
+    <label for="credit">Credit Card</label>
+    <input type="text" id="credit" name="credit" pattern="typeyourregxhere" title="Must contain 16 digits" required>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<div id="message">
+  <h3>Credit card must contain the following:</h3>
+  <p id="number" class="invalid">16 <b>numbers</b></p>
+</div>
+				
+<script src="script.js"></script>
+
+</body>
+</html>
